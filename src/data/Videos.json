@@ -1,0 +1,99 @@
+[
+  {
+    "id": "01",
+    "title": "HTML For Beginners",
+    "channel": "Programming with Mosh",
+    "duration": "01:09:33",
+    "image": "https://i.imgur.com/68ZsUKG.jpg",
+    "video": "https://www.youtube.com/watch?v=qz0aGYrrlhU"
+  },
+  {
+    "id": "02",
+    "title": "JavaScript Tutorial for Beginners",
+    "channel": "Programming with Mosh",
+    "duration": "48:17",
+    "image": "https://i.imgur.com/jMUIEQF.jpeg",
+    "video": "https://www.youtube.com/watch?v=W6NZfCO5SIk"
+  },
+  {
+    "id": "03",
+    "title": "Fastest way to be a MASTER web dev???",
+    "channel": "Kevin Powell",
+    "image": "https://i.imgur.com/Xj7lUq7.jpg",
+    "video": "https://www.youtube.com/watch?v=2v3CWM5FmHs"
+  },
+  {
+    "id": "04",
+    "title": "Why I use the BEM naming convention for my CSS",
+    "channel": "Kevin Powell",
+    "duration": "07:03",
+    "image": "https://i.imgur.com/8hyFYUX.jpg",
+    "video": "https://www.youtube.com/watch?v=SLjHSVwXYq4"
+  },
+  {
+    "id": "05",
+    "title": "Learn Sass In 20 Minutes",
+    "channel": "Dev Ed",
+    "duration": "19:42",
+    "image": "https://i.imgur.com/tboHW03.jpg",
+    "video": "https://www.youtube.com/watch?v=Zz6eOVaaelI"
+  },
+
+  {
+    "id": "07",
+    "title": "What Is ReactJS?",
+    "channel": "Simplilearn",
+    "duration": "09:29",
+    "image": "https://i.imgur.com/S6wB3bT.jpg",
+    "video": "https://www.youtube.com/watch?v=Y6aYx_KKM7A"
+  },
+  {
+    "id": "08",
+    "title": "ReactJS Component Lifecycle",
+    "channel": "Simplilearn",
+    "duration": "20:48",
+    "image": "https://i.imgur.com/IpsUa2E.jpg",
+    "videos": "https://r1---sn-npoe7ns7.googlevideo.com/videoplayback?expire=1632157202&ei=smlIYbO6MYiL1wL1wZfgBw&ip=185.168.158.221&id=o-ACXIc710J1TVKjcVmYZloRFeNN5giyKL-p9okAzOcYfL&itag=18&source=youtube&requiressl=yes&vprv=1&mime=video%2Fmp4&ns=od6WYM1QFYJqbvs6lJxSB3QG&gir=yes&clen=27121105&ratebypass=yes&dur=1248.583&lmt=1568899484342644&fexp=24001373,24007246&c=WEB&txp=2216222&n=4f1cizjLV4-FIp&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cvprv%2Cmime%2Cns%2Cgir%2Cclen%2Cratebypass%2Cdur%2Clmt&sig=AOq0QJ8wRQIhAOZoxw_piblY3K-AlLbYo6sNnl97axnJRJ2gUHqmi3IBAiBqPkssu-8YZmGhnpZP12-YrH-ph4A-2jZhodznAFLV7Q%3D%3D&title=Y2Mate.is%20-%20ReactJS%20Component%20Lifecycle%20%20ReactJS%20Tutorial%20For%20Beginners%20%20ReactJS%20Training%20%20Simplilearn-3EbYJrAOpUs-360p-1632135603525&rm=sn-4g5ezd7e&req_id=b4724412e5e3a3ee&ipbypass=yes&cm2rm=sn-2gpnh5-q5je7e,sn-h55ez7e&redirect_counter=3&cms_redirect=yes&mh=U-&mip=103.122.29.218&mm=34&mn=sn-npoe7ns7&ms=ltu&mt=1632135403&mv=m&mvi=1&pl=26&lsparams=ipbypass,mh,mip,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRQIhAIZihtS9nAywR7MsxD7rUI5kncOZWEnQ6zQgnMvJGtR5AiA6WR5MD-RptHHrxtYZrZXORfHeyIw96KC1h8jPrmEIJg%3D%3D",
+    "video": "www.youtube.com/watch?v=3EbYJrAOpUs"
+  },
+  {
+    "id": "09",
+    "title": "React Router Tutorial",
+    "channel": "Dev Ed",
+    "duration": "33:09",
+    "image": "https://i.imgur.com/5ve9Qx7.jpg",
+    "video": "https://www.youtube.com/watch?v=Law7wfdg_ls"
+  },
+  {
+    "id": "10",
+    "title": "Node.js Tutorial",
+    "channel": "Programming with Mosh",
+    "duration": "1:18:15",
+    "image": "https://i.imgur.com/FqqRfzp.jpg",
+    "video": "https://www.youtube.com/watch?v=TlB_eWDSMt4"
+  },
+  {
+    "id": "11",
+    "title": "Learn to build Api",
+    "channel": "Programming with Mosh",
+    "duration": "58:39",
+    "image": "https://i.imgur.com/ICgOB6h.jpeg",
+    "video": "https://www.youtube.com/watch?v=pKd0Rpw7O48"
+  },
+  {
+    "id": "12",
+    "title": "ReactJS Interview Questions",
+    "channel": "Simplilearn",
+    "duration": "27:09",
+    "image": "https://i.imgur.com/y6STky5.jpg",
+    "video": "https://www.youtube.com/watch?v=-dS9pvGqlX8"
+  },
+  {
+    "id": "13",
+    "title": "Node.js Interview Question",
+    "channel": "Edureka",
+    "duration": "45:03",
+    "image": "https://i.imgur.com/tceEHTY.jpg",
+    "video": "https://www.youtube.com/watch?v=6WYEmUVhiwQ"
+  }
+]
