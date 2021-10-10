@@ -13,13 +13,13 @@ class App extends Component {
   render() {
     console.log(this.state.videos[0].image);
     return (
-      <>
+      <main>
         <div className="App">
           <Header />
-          <MainVideo />
+          <MainVideo clip={this.state.videos} />
           <VideoCards videos={this.state.videos} />
         </div>
-      </>
+      </main>
     );
   }
 }

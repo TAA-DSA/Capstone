@@ -1,25 +1,12 @@
 import React from "react";
-import Video from "../../Asset/React Router Beginners-4.mp4";
-import Test from "../../Asset/intro-to-react-router.jpeg";
 import "../../Component/MainVideo/MainVideo.scss";
-//import YouTube from "react-youtube";
 import ReactPlayer from "react-player";
 
-function MainVideo() {
+function MainVideo({ clip }) {
   return (
     <main>
       <div className="main">
-        <ReactPlayer
-          url="https://www.youtube.com/watch?v=qz0aGYrrlhU"
-          controls
-        />
-
-        {/* <video
-          className="main__videoplayer"
-          src={Video}
-          poster={Test}
-          controls
-        /> */}
+        <ReactPlayer url={clip[0].video} controls />
       </div>
       <div>
         {/* <h1>Title</h1>
