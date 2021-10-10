@@ -16,7 +16,7 @@ class App extends Component {
       <main>
         <div className="App">
           <Header />
-          <MainVideo clip={this.state.videos} />
+          <MainVideo clip={this.state.selectedVideo} />
           <VideoCards videos={this.state.videos} />
         </div>
       </main>

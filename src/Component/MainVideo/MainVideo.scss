@@ -3,19 +3,32 @@
   justify-content: center;
   margin-top: 2rem;
 
+  &__videoDetails {
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-size: 1rem;
+    color: blue;
+    padding: 1rem;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 0.25rem;
+  }
+
   &__videoplayer {
     width: 80%;
     border-radius: 1rem;
   }
 
   &__notebox {
-    font-size: 0.5em;
+    font-size: 0.7em;
     padding: 1rem;
+
     width: 65%;
     height: 8rem;
     margin-top: 2rem;
     margin-left: 5rem;
     border-radius: 0.25rem;
-    border: 1em solid #e1e1e1;
+    border: 0.25em solid blue;
   }
 }

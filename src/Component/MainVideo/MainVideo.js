@@ -6,20 +6,18 @@ function MainVideo({ clip }) {
   return (
     <main>
       <div className="main">
-        <ReactPlayer url={clip[0].video} controls />
+        <ReactPlayer url={clip.video} controls />
       </div>
-      <div>
-        {/* <h1>Title</h1>
-        <p>Description</p>
-        <p>Duration</p> */}
-      </div>
-      {/* <div>
+      <div className="main__videoDetails">
+        <p>{clip.title}</p>
+        <p>{clip.duration}</p>
         <textarea
           className="main__notebox"
           input="text"
           placeholder="Notes..."
         />
-      </div> */}
+      </div>
+      <div></div>
     </main>
   );
 }
