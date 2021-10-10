@@ -8,7 +8,6 @@ ReactDOM.render(
   <BrowserRouter>
     <Switch>
       <Route path="/" exact component={App} />
-
       <Route path="/videos/:videoId" component={App} />
     </Switch>
   </BrowserRouter>,
