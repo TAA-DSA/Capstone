@@ -29,16 +29,26 @@
     margin-top: 2rem;
     margin-left: 5rem;
     border-radius: 0.25rem;
-    border: 0.25em solid blue;
+    border: 0.25em solid #add8e6;
   }
   &__button {
     display: flex;
-    justify-content: right;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-left: 16.5rem;
+
     &__save {
       border-radius: 0.5rem;
+      color: #e1e1e1;
       padding: 0.25rem;
       background-color: white;
-      border: 0.15em solid blue;
+      border: 0.15em solid #add8e6;
+    }
+    &__save:hover {
+      border: none;
+      color: white;
+      background-color: #add8e6;
+      cursor: pointer;
     }
   }
 }

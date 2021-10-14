@@ -3,6 +3,7 @@ import Header from "./Component/Header/Header";
 import MainVideo from "./Component/MainVideo/MainVideo";
 import VideoCards from "./Component/VideoCards/VideoCards";
 import axios from "axios";
+import AddNotes from "./Component/AddNotes";
 
 class App extends Component {
   state = {
@@ -51,9 +52,6 @@ class App extends Component {
     const previousVideo = previousProps.match.params.videoId;
     console.log(currentVideo);
 
-    // if (!currentVideo) {
-    //   this.getAllVideos();
-    // }
     //Prevent infinite loop
     if (currentVideo !== previousVideo) {
       if (!currentVideo) {
@@ -72,8 +70,8 @@ class App extends Component {
       <main>
         <div className="App">
           <Header />
-
           <MainVideo clip={this.state.selectedVideo} />
+          <AddNotes />
           <VideoCards videos={this.state.videos} />
         </div>
       </main>
