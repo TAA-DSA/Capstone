@@ -31,4 +31,14 @@
     border-radius: 0.25rem;
     border: 0.25em solid blue;
   }
+  &__button {
+    display: flex;
+    justify-content: right;
+    &__save {
+      border-radius: 0.5rem;
+      padding: 0.25rem;
+      background-color: white;
+      border: 0.15em solid blue;
+    }
+  }
 }

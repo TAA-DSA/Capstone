@@ -1,8 +1,7 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import Header from "./Component/Header/Header";
 import MainVideo from "./Component/MainVideo/MainVideo";
 import VideoCards from "./Component/VideoCards/VideoCards";
-
 import axios from "axios";
 
 class App extends Component {
@@ -44,14 +43,24 @@ class App extends Component {
 
   componentDidMount() {
     this.getAllVideos();
+    console.log("componentmounted");
   }
 
   componentDidUpdate(previousProps) {
     const currentVideo = this.props.match.params.videoId;
     const previousVideo = previousProps.match.params.videoId;
+    console.log(currentVideo);
 
+    // if (!currentVideo) {
+    //   this.getAllVideos();
+    // }
+    //Prevent infinite loop
     if (currentVideo !== previousVideo) {
-      this.getVideoDetails(currentVideo);
+      if (!currentVideo) {
+        this.getAllVideos();
+      } else {
+        this.getVideoDetails(currentVideo);
+      }
     }
   }
 
@@ -63,6 +72,7 @@ class App extends Component {
       <main>
         <div className="App">
           <Header />
+
           <MainVideo clip={this.state.selectedVideo} />
           <VideoCards videos={this.state.videos} />
         </div>

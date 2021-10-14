@@ -16,8 +16,10 @@ function MainVideo({ clip }) {
           input="text"
           placeholder="Notes..."
         />
+        <div className="main__button">
+          <button className="main__button__save">Save Note</button>
+        </div>
       </div>
-      <div></div>
     </main>
   );
 }
