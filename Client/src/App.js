@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React, { Component } from "react";
 import Header from "./Component/Header/Header";
 import MainVideo from "./Component/MainVideo/MainVideo";
 import VideoCards from "./Component/VideoCards/VideoCards";
@@ -33,8 +33,7 @@ class App extends Component {
       //current video ID
       const currentvideoId = this.props.match.params.videoId;
 
-      // Condition to show the video thats been selected on main page
-      // and stay on the page
+      //Video displayed on the main page
 
       const showVideoId = currentvideoId ? currentvideoId : firstVideo;
 
@@ -52,8 +51,9 @@ class App extends Component {
     const previousVideo = previousProps.match.params.videoId;
     console.log(currentVideo);
 
-    //Prevent infinite loop
+    //condiotional statement to prevent infinite loop
     if (currentVideo !== previousVideo) {
+      //condition to return to the main page if no video is selected
       if (!currentVideo) {
         this.getAllVideos();
       } else {

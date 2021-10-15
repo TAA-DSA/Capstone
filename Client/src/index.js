@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
-import LoginForm from "./LoginForm/LoginForm";
+//import LoginForm from "./LoginForm/LoginForm";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 ReactDOM.render(
