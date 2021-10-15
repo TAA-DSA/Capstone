@@ -1,9 +1,9 @@
 const express = require("express");
 const router = express.Router();
 const fs = require("fs");
-//const { v4: uuidv4 } = require("uuid");
+const { v4: uuidv4 } = require("uuid");
 
-const videosFilePath = "./data/videos.json";
+const videosFilePath = "./data/Videos.json";
 
 const getVideos = () => {
   const fileContent = fs.readFileSync(videosFilePath);
@@ -33,6 +33,24 @@ router.get("/:id", (_req, res) => {
   } catch (err) {
     return res.status(500).json({ error: "Invalid file request." });
   }
+});
+
+//upload a new video
+
+router.post("/", (req, res) => {
+  console.log("Request body object:", req.body);
+
+  const newVideo = {
+    id: uuidv4(),
+    video: req.body.text,
+  };
+
+  const video = getVideos();
+  video.push(newVideo);
+
+  fs.writeFileSync(videosFilePath, JSON.stringify(video));
+
+  return res.status(201).json(newVideo);
 });
 
 module.exports = router;
