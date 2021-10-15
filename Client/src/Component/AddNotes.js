@@ -10,9 +10,9 @@ class AddNotes extends Component {
 
   handleChange = (event) => {
     this.setState({
-      [event.target.note]: event.target.value,
+      [event.target.name]: event.target.value,
     });
-    console.log(event.target.input);
+    console.log(event.target.name);
   };
 
   handleSubmit = (event) => {
@@ -31,7 +31,7 @@ class AddNotes extends Component {
       <div>
         <textarea
           className="main__notebox"
-          input="text"
+          name="text"
           placeholder="Make Notes here..."
           onChange={this.handleChange}
         />
