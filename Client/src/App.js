@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import Header from "./Component/Header/Header";
 import MainVideo from "./Component/MainVideo/MainVideo";
 import VideoCards from "./Component/VideoCards/VideoCards";
 import axios from "axios";
 import AddNotes from "./Component/AddNotes";
+//import NoteList from "./Component/NoteList/NoteList";
 
 class App extends Component {
   state = {
@@ -69,9 +69,9 @@ class App extends Component {
     return (
       <main>
         <div className="App">
-          <Header />
           <MainVideo clip={this.state.selectedVideo} />
           <AddNotes />
+          {/* <NoteList note={this.state.videos} /> */}
           <VideoCards videos={this.state.videos} />
         </div>
       </main>

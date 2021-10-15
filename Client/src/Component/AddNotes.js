@@ -1,6 +1,7 @@
 import React from "react";
 import "../Component/MainVideo/MainVideo.scss";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function AddNotes() {
   const [noteText, setNoteText] = useState("");
@@ -8,6 +9,10 @@ function AddNotes() {
   const handleChange = (event) => {
     console.log(event.target.value);
     setNoteText(event.target.value);
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
   };
 
   return (
@@ -19,9 +24,12 @@ function AddNotes() {
         value={noteText}
         onChange={handleChange}
       />
-      {/* <button className="main__button__save">Save Note</button> */}
+
       <div className="main__button">
-        <button className="main__button__save">Save Note</button>
+        <button className="main__button__save">Save</button>
+        <Link className="main__button__link" to="/notes">
+          <button className="main__button__save">Notes</button>
+        </Link>
       </div>
     </div>
   );
