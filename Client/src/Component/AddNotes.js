@@ -4,11 +4,11 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 function AddNotes() {
-  const [noteText, setNoteText] = useState("");
+  //const [noteText, setNoteText] = useState("");
 
   const handleChange = (event) => {
     console.log(event.target.value);
-    setNoteText(event.target.value);
+    //setNoteText(event.target.value);
   };
 
   const handleSubmit = (event) => {
@@ -21,7 +21,6 @@ function AddNotes() {
         className="main__notebox"
         input="text"
         placeholder="Make Notes here..."
-        value={noteText}
         onChange={handleChange}
       />
 
