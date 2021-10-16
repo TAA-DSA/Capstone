@@ -15,14 +15,14 @@ class AddNotes extends Component {
   };
 
   isTextValid = () => {
-    if (!this.state.name) {
+    if (this.state.note) {
       return true;
     }
   };
 
   handleSubmit = (event) => {
     event.preventDefault();
-    if (this.isTextValid()) {
+    if (!this.isTextValid()) {
       axios.post(`http://localhost:8080/notes`, this.state).then(() => {
         this.setState({
           note: "",
