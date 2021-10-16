@@ -12,17 +12,26 @@ class AddNotes extends Component {
     this.setState({
       [event.target.name]: event.target.value,
     });
-    console.log(event.target.name);
+  };
+
+  isTextValid = () => {
+    if (!this.state.note) {
+      return true;
+    }
   };
 
   handleSubmit = (event) => {
     event.preventDefault();
-    axios.post(`http://localhost:8080/notes`, this.state).then((addNotes) => {
-      this.setState({
-        note: "",
+    if (!this.isTextValid) {
+      axios.post(`http://localhost:8080/notes`, this.state).then(() => {
+        this.setState({
+          note: "",
+        });
       });
-    });
-    alert("Notes Saved");
+      alert("Notes Saved");
+    } else {
+      alert("Please write a note to save");
+    }
   };
 
   render() {

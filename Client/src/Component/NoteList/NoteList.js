@@ -7,17 +7,16 @@ class NoteList extends Component {
     note: [],
   };
 
-  getVideoDetails = (videoID) => {
-    axios.get(`http://localhost:8080/notes`).then((videoDetails) => {
+  getNotes = () => {
+    axios.get(`http://localhost:8080/notes`).then((noteData) => {
       this.setState({
-        note: videoDetails.data,
+        note: noteData.data,
       });
-      console.log("notes", this.state.note);
     });
   };
 
   componentDidMount() {
-    this.getVideoDetails();
+    this.getNotes();
   }
 
   render() {
