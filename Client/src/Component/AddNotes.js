@@ -17,13 +17,12 @@ class AddNotes extends Component {
 
   handleSubmit = (event) => {
     event.preventDefault();
-    axios.post(`http://localhost:8080/notes`, this.state).then((addVideo) => {
-      // console.log(addVideo);
-      // console.log("id", addVideo.data.id);
+    axios.post(`http://localhost:8080/notes`, this.state).then((addNotes) => {
       this.setState({
         note: "",
       });
     });
+    alert("Notes Saved");
   };
 
   render() {

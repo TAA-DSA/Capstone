@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-// import { v4 as uuidv4 } from "uuid";
 import "../NoteList/NoteList.scss";
 import axios from "axios";
 
@@ -29,7 +28,7 @@ class NoteList extends Component {
     console.log("state", this.state.note[0].text);
 
     return (
-      <p>
+      <main>
         {this.state.note.map((note) => {
           return (
             <div key={note.id} className="note__list">
@@ -37,7 +36,7 @@ class NoteList extends Component {
             </div>
           );
         })}
-      </p>
+      </main>
     );
   }
 }
