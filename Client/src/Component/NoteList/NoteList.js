@@ -24,14 +24,12 @@ class NoteList extends Component {
       return <p>Please wait, this page is loading...</p>;
     }
 
-    console.log("state", this.state.note[0].text);
-
     return (
       <main>
         {this.state.note.map((note) => {
           return (
             <div key={note.id} className="note__list">
-              <p>{note.text}</p>
+              <p className="note__list__text">{note.text}</p>
             </div>
           );
         })}

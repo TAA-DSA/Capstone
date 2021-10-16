@@ -23,7 +23,8 @@
   &__notebox {
     font-size: 0.7em;
     padding: 1rem;
-
+    display: flex;
+    flex-wrap: wrap;
     width: 65%;
     height: 8rem;
     margin-top: 2rem;

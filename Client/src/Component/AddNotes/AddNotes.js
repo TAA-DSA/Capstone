@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "../Component/MainVideo/MainVideo.scss";
+import "../MainVideo/MainVideo.scss";
 import { Link } from "react-router-dom";
 import axios from "axios";
 
@@ -15,14 +15,14 @@ class AddNotes extends Component {
   };
 
   isTextValid = () => {
-    if (!this.state.note) {
+    if (!this.state.name) {
       return true;
     }
   };
 
   handleSubmit = (event) => {
     event.preventDefault();
-    if (!this.isTextValid) {
+    if (this.isTextValid()) {
       axios.post(`http://localhost:8080/notes`, this.state).then(() => {
         this.setState({
           note: "",

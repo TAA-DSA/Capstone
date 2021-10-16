@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import "../VideoCards/VideoCards.scss";
 
 function VideoCards({ videos }) {
-  console.log(videos);
   return (
     <div className="videocards">
       <h1 className="videocards__header"> My Videos</h1>

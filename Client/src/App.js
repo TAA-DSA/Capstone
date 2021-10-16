@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import MainVideo from "./Component/MainVideo/MainVideo";
 import VideoCards from "./Component/VideoCards/VideoCards";
 import axios from "axios";
-import AddNotes from "./Component/AddNotes";
-//import NoteList from "./Component/NoteList/NoteList";
+import AddNotes from "./Component/AddNotes/AddNotes";
 
 class App extends Component {
   state = {
@@ -43,13 +42,11 @@ class App extends Component {
 
   componentDidMount() {
     this.getAllVideos();
-    console.log("componentmounted");
   }
 
   componentDidUpdate(previousProps) {
     const currentVideo = this.props.match.params.videoId;
     const previousVideo = previousProps.match.params.videoId;
-    console.log(currentVideo);
 
     //condiotional statement to prevent infinite loop
     if (currentVideo !== previousVideo) {
@@ -71,7 +68,6 @@ class App extends Component {
         <div className="App">
           <MainVideo clip={this.state.selectedVideo} />
           <AddNotes />
-          {/* <NoteList note={this.state.videos} /> */}
           <VideoCards videos={this.state.videos} />
         </div>
       </main>
